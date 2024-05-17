@@ -99,11 +99,7 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
-
-Describe why you included the table and what information it reveals
-
-We chose to include this table to display the top 10 content on Netflix based on each title's ratings. This table gives a visual display of the top 10 list by including the title name, the year it was released, what certification it received, the genre, the rating, and number of votes received from IMDb. 
+We chose to include this table to display the top 10 content on Netflix based on each title's ratings. This table gives a visual display of the top 10 list by including the title name, the year it was released, what certification it received, the genre, the rating, and number of votes received from IMDb. We chose to include this table to see what year the top 10 rated content on Netflix to see which release years had the most popular content. Based on this table, we can see a variety in years.  
 
 ``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("table.R")}
 
