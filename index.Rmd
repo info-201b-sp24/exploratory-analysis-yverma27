@@ -99,6 +99,10 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
+Include a table of aggregate information
+
+Describe why you included the table and what information it reveals
+
 ### Chart 1
 
 We chose to include a line graph that displays the amount of content released on Netflix per year because this could show us which years had more content being released compared to others and whether it was around the same time frame as the COVID lockdown/pandemic phase. Through this graph, we can see that there was a significant increase in the amount of content being released on Netflix between 2018-2022, with the peak being in 2019. This goes to show that the amount of content being released on Netflix had seen a growth during the same time as the COVID-19 pandemic (2019-2021). 
