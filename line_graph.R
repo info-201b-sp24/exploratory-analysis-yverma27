@@ -17,11 +17,11 @@ yearly_frequency <- updated_dataset2 %>%
 data_viz <- ggplot(yearly_frequency, aes(x = release_year, y = frequency)) +
   geom_line() +
   geom_point() +
-  labs(title = "Amount of Content Released Each Year",
+  labs(title = "Amount of Content Released on Netflix Each Year",
        x = "Year",
-       y = "Frequency") +
+       y = "Number of Content") +
   theme_minimal() +
-  scale_x_continuous(breaks = seq(1900, 2024, by = 5))
+  scale_x_continuous(breaks = seq(1932, 2024, by = 5))
 
 data_viz
   
