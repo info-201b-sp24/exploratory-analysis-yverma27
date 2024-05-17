@@ -103,9 +103,11 @@ Include a table of aggregate information
 
 Describe why you included the table and what information it reveals
 
+We chose to include this table to display the top 10 content on Netflix based on each title's ratings. This table gives a visual display of the top 10 list by including the title name, the year it was released, what certification it received, the genre, the rating, and number of votes received from IMDb. 
+
 ``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("table.R")}
 
-```
+``````
 
 ### Chart 1
 
@@ -113,7 +115,7 @@ We chose to include a line graph that displays the amount of content released on
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("line_graph.R")}
 
-```
+``````
 
 
 ### Chart 2
@@ -123,7 +125,7 @@ Include a chart
 Describe why you chose this chart and what information it reveals
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("chart1_example.R")}
-```
+``````
 
 
 ### Chart 3
@@ -132,5 +134,3 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
-``````{r, echo = FALSE, message = FALSE, code = readLines("chart1_example.R")}
-```
