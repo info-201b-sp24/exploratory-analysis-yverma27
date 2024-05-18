@@ -97,7 +97,6 @@ Some challenges that might need to be addressed with our project idea include da
 
 Our dataset presents different kinds of data on various Netflix shows and movies. There are 9 categories of data, including title, year, certificate, duration, genre, rating, description, stars, and votes. Along with these categories, there are 9957 observations, or rows. The rating category measures the IMDB rating of the show or movie, and the average rating amongst all observations is ~6.76. This column also has a range of 8.2, with a max rating of 9.9 and a minimum rating of 1.7. While there are many observations in this dataset, something to keep in mind is that idea that it takes into account different spin-offs and recreations of shows and records them as separate entries. To that extent, the number of unique titles in this data is 7912.
 
-[Summary Info](exploratory-analysis-yverma27/index_files/summaryinfo.R)
 
 ### Table
 
