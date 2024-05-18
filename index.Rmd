@@ -53,7 +53,7 @@ Our primary dataset for this analysis was sourced from Kaggle, a platform well-k
 The data was collected by Kaggle user Tayyar Hussain, who aggregated it to facilitate data analysis projects related to streaming content on Netflix. The dataset compilation involved automated scripts to extract data from public databases such as IMDb, as well as with Netflix's publicly available information on their titles.
 
 
-*How was the data collected or generated?* 
+*How was the data collected or generated?*
 
 The dataset on popular movies and TV shows on Netflix was collected using automated data scraping techniques, targeting publicly available sources such as IMDb and Netflix's own platform. Scripts were utilized to extract a variety of data points, including titles, release dates, genres, and viewer ratings. Following extraction, the data underwent a cleaning process to ensure its accuracy and usability, which involved tasks like removing duplicates and correcting errors.
 
@@ -63,12 +63,12 @@ The dataset on popular movies and TV shows on Netflix was collected using automa
 This dataset was collected mainly to provide insights into the popularity metrics of movies and TV shows available on Netflix, measured through IMDb ratings and audience engagement statistics. Such datasets are important for understanding consumer behavior in the media consumption sector and for academic purposes in data science and analysis courses.
 
 
-*How many observations (rows) are in your data?* 
+*How many observations (rows) are in your data?*
 
 The dataset contains 9957 observations, representing different titles on Netflix.
 
 
-*How many features (columns) are in the data?* 
+*How many features (columns) are in the data?*
 
 The dataset on popular movies and TV shows on Netflix contains 9 features (columns). These features include critical information such as title name, release year, genre, IMDb rating, duration, cast, description, and other relevant attributes that help in analyzing the popularity and viewer engagement with the content on Netflix.
 
@@ -107,7 +107,7 @@ We chose to include this table to display the top 10 content on Netflix based on
 
 ### Chart 1
 
-We chose to include a line graph that displays the amount of content released on Netflix per year because this could show us which years had more content being released compared to others and whether it was around the same time frame as the COVID lockdown/pandemic phase. Through this graph, we can see that there was a significant increase in the amount of content being released on Netflix between 2018-2022, with the peak being in 2019. This goes to show that the amount of content being released on Netflix had seen a growth during the same time as the COVID-19 pandemic (2019-2021). 
+We chose to include a line graph that displays the amount of content released on Netflix per year because this could show us which years had more content being released compared to others and whether it was around the same time frame as the COVID lockdown/pandemic phase. Through this graph, we can see that there was a significant increase in the amount of content being released on Netflix between 2018-2022, with the peak being in 2019. This goes to show that the amount of content being released on Netflix had seen a growth during the same time as the COVID-19 pandemic (2019-2021).
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("line_graph.R")}
 
@@ -116,11 +116,9 @@ We chose to include a line graph that displays the amount of content released on
 
 ### Chart 2
 
-Include a chart
+For our second chart, we chose to create a bar chart which displays the total number of votes received by Netflix shows and movies each year (for the selected years of 2010-2022). We chose this chart because it gives us insight into which years generated the most engagement from shows and movies on Netflix. While this directly signifies which years lead to the most people involved in Netflix voting, we also chose this chart because we believe that it is then helpful in allowing us to make predictions about other factors such as the idea that increased engagement could suggest increased viewership and media consumption. Since we are looking at patterns of media during Covid, we can see that around the peak of covid in 2019, 2020, and 2021, there is a major increase in votes of Netflix shows and movies released in those years. This shows increased engagement during Covid as compared to non-covid years such as the ones leading up to the time period.  
 
-Describe why you chose this chart and what information it reveals
-
-``````{r, echo = FALSE, message = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, message = FALSE, code = readLines("Chart2.R")}
 ``````
 
 
@@ -130,3 +128,5 @@ Include a chart
 
 Describe why you chose this chart and what information it reveals
 
+``````{r, echo = FALSE, message = FALSE, code = readLines("chart1_example.R")}
+``````
