@@ -17,8 +17,6 @@ print(extracted_years)
 updated_netflix_data <- new_data %>%
   mutate(release_year = as.numeric(extracted_years))
 
-updated_netflix_data_2 <- as.numeric(updated_netflix_data$votes) order
-
 votes_per_year <- updated_netflix_data %>%
   group_by(release_year) %>%
   summarise(total_votes = sum(votes, na.rm = TRUE))
