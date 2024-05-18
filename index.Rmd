@@ -95,7 +95,9 @@ Some challenges that might need to be addressed with our project idea include da
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+Our dataset presents different kinds of data on various Netflix shows and movies. There are 9 categories of data, including title, year, certificate, duration, genre, rating, description, stars, and votes. Along with these categories, there are 9957 observations, or rows. The rating category measures the IMDB rating of the show or movie, and the average rating amongst all observations is ~6.76. This column also has a range of 8.2, with a max rating of 9.9 and a minimum rating of 1.7. While there are many observations in this dataset, something to keep in mind is that idea that it takes into account different spin-offs and recreations of shows and records them as separate entries. To that extent, the number of unique titles in this data is 7912.
+
+[Summary Info](index_files/summaryinfo.R)
 
 ### Table
 
@@ -123,9 +125,7 @@ For our second chart, we chose to create a bar chart which displays the total nu
 
 ### Chart 3
 
-Include a chart
+Our third chart shows the frequency of each of the different genres within our data table. We chose this chart because we wanted to know which genres are most popular on Netflix. With this information, we can make predictions about which genres may have been watched more during Covid, when more people were at home utlitzing streaming platforms. Through this graph, we can see that shows and movies of short, sci-fi, mystery, and family genres are most popular. Alternatively, the least common genres are shows and movies of combined comedy and drama genres, documentaries, and adventure animation. This shows that in general, shorter, sci-fi, mystery, and family-related Netflix content is much more popoular than comedy dramas, documentaries, and animated adventure shows and movies.
 
-Describe why you chose this chart and what information it reveals
-
-``````{r, echo = FALSE, message = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, message = FALSE, code = readLines("Chart3.R")}
 ``````
