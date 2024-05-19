@@ -9,9 +9,7 @@ Analyzing TV Shows and Movies on Netflix Based on Popularity
 
 ### Authors
 
-Yuvika Verma
-Jolie Sim
-Najat Alnuaimi
+Yuvika Verma, Jolie Sim, Najat Alnuaimi
 
 ### Date
 
@@ -97,6 +95,10 @@ Some challenges that might need to be addressed with our project idea include da
 
 Our dataset presents different kinds of data on various Netflix shows and movies. There are 9 categories of data, including title, year, certificate, duration, genre, rating, description, stars, and votes. Along with these categories, there are 9957 observations, or rows. The rating category measures the IMDB rating of the show or movie, and the average rating amongst all observations is ~6.76. This column also has a range of 8.2, with a max rating of 9.9 and a minimum rating of 1.7. While there are many observations in this dataset, something to keep in mind is that idea that it takes into account different spin-offs and recreations of shows and records them as separate entries. To that extent, the number of unique titles in this data is 7912.
 
+``````{r, echo = FALSE, message = FALSE, warning = FALSE, code = readLines("summaryinfo.R")}
+
+``````
+
 
 ### Table
 
@@ -111,20 +113,23 @@ We chose to include this table to display the top 10 content on Netflix based on
 We chose to include a line graph that displays the amount of content released on Netflix per year because this could show us which years had more content being released compared to others and whether it was around the same time frame as the COVID lockdown/pandemic phase. Through this graph, we can see that there was a significant increase in the amount of content being released on Netflix between 2018-2022, with the peak being in 2019. This goes to show that the amount of content being released on Netflix had seen a growth during the same time as the COVID-19 pandemic (2019-2021).
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("line_graph.R")}
+
 ``````
 
 
 ### Chart 2
 
-For our second chart, we chose to create a bar chart which displays the total number of votes received by Netflix shows and movies each year (for the selected years of 2010-2022). We chose this chart because it gives us insight into which years generated the most engagement from shows and movies on Netflix. While this directly signifies which years lead to the most people involved in Netflix voting, we also chose this chart because we believe that it is then helpful in allowing us to make predictions about other factors such as the idea that increased engagement could suggest increased viewership and media consumption. Since we are looking at patterns of media during Covid, we can see that around the peak of covid in 2019, 2020, and 2021, there is a major increase in votes of Netflix shows and movies released in those years. This shows increased engagement during Covid as compared to non-covid years such as the ones leading up to the time period.  
+For our second chart, we chose to create a bar chart which displays the total number of votes received by Netflix shows and movies each year (for the selected years of 2010-2022). We chose this chart because it gives us insight into which years generated the most engagement from shows and movies on Netflix. While this directly signifies which years lead to the most people involved in Netflix voting, we also chose this chart because we believe that it is then helpful in allowing us to make predictions about other factors such as the idea that increased engagement could suggest increased viewership and media consumption. Since we are looking at patterns of media during Covid, we can see that around the peak of Covid in 2019, 2020, and 2021, there is a major increase in votes of Netflix shows and movies released in those years. This shows increased engagement during Covid as compared to non-Covid years such as the ones leading up to the time period.  
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart2.R")}
+
 ``````
 
 
 ### Chart 3
 
-Our third chart shows the frequency of each of the different genres within our data table. We chose this chart because we wanted to know which genres are most popular on Netflix. With this information, we can make predictions about which genres may have been watched more during Covid, when more people were at home utlitzing streaming platforms. Through this graph, we can see that shows and movies of short, sci-fi, mystery, and family genres are most popular. Alternatively, the least common genres are shows and movies of combined comedy and drama genres, documentaries, and adventure animation. This shows that in general, shorter, sci-fi, mystery, and family-related Netflix content is much more popoular than comedy dramas, documentaries, and animated adventure shows and movies.
+Our third chart shows the frequency of each of the different genres within our data table. We chose this chart because we wanted to know which genres are most popular on Netflix. With this information, we can make predictions about which genres may have been watched more during Covid, when more people were at home utilizing streaming platforms. Through this graph, we can see that shows and movies of short, sci-fi, mystery, and family genres are most popular. Alternatively, the least common genres are shows and movies of combined comedy and drama genres, documentaries, and adventure animation. This shows that in general, shorter, sci-fi, mystery, and family-related Netflix content is much more popular than comedy dramas, documentaries, and animated adventure shows and movies.
 
 ``````{r, echo = FALSE, message = FALSE, code = readLines("Chart3.R")}
+
 ``````
