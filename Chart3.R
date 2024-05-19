@@ -1,23 +1,29 @@
 
 library(dplyr)
-library(stringr)
 library(ggplot2)
-library(tidyverse)
+library(stringr)
+library(tidyr)
 
-options(repos = c(CRAN = "https://cloud.r-project.org"))
+movies <- read.csv("n_movies.csv")
 
-data <- read.csv("n_movies.csv")
+movies <- movies %>% 
+  separate_rows(genre, sep = ",\\s*")
 
-data2 <- na.omit(data)
+movies <- na.omit(movies)
 
-genre_frequency <- data2 %>%
-  count(genre, sort = TRUE)
+movies$extracted_genre <- word(movies$genre, 1)
 
-chart_3 <- ggplot(data = genre_frequency, aes(x = reorder(genre, n), y = n), fill = x) +
+genre_count <- movies %>%
+  group_by(extracted_genre) %>%
+  summarize(frequency = n()) %>%
+  arrange(desc(frequency))
+
+# Create the bar graph
+ggplot(genre_count, aes(x = reorder(extracted_genre, -frequency), y = frequency)) +
   geom_bar(stat = "identity") +
-  labs(title = "Frequency of Different Genres",
+  labs(title = "Frequency of Movies by Genre",
        x = "Genre",
        y = "Frequency") +
-  theme_minimal()
-
-chart_3
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  scale_y_continuous(breaks = seq(0, max(genre_count$frequency), by = 500))

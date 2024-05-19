@@ -33,3 +33,32 @@ chart_3 <- ggplot(data = genre_frequency, aes(x = reorder(genre, n), y = n), fil
 chart_3
 ```
 
+```{r}
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(tidyr)
+
+movies <- read.csv("n_movies.csv")
+
+movies <- movies %>% 
+  separate_rows(genre, sep = ",\\s*")
+
+movies$extracted_genre <- word(movies$genre, 1)
+
+genre_count <- movies %>%
+  group_by(extracted_genre) %>%
+  summarize(frequency = n()) %>%
+  arrange(desc(frequency))
+
+# Create the bar graph
+ggplot(genre_count, aes(x = reorder(extracted_genre, -frequency), y = frequency)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Frequency of Movies by Genre",
+       x = "Genre",
+       y = "Frequency") +
+  theme_minimal()
+
+
+```
+

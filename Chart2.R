@@ -4,7 +4,6 @@ library(stringr)
 library(ggplot2)
 library(tidyverse)
 
-options(repos = c(CRAN = "https://cloud.r-project.org"))
 
 netflix_data <- read.csv("n_movies.csv")
 

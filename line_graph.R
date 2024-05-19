@@ -2,8 +2,6 @@ library(ggplot2)
 library(dplyr)
 library(stringr)
 
-options(repos = c(CRAN = "https://cloud.r-project.org"))
-
 dataset <- read.csv("n_movies.csv")
 updated_dataset <- na.omit(dataset)
 
